@@ -1,0 +1,60 @@
+.trapezoid {
+    border-bottom: 100px solid #86ba5e;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 100px;
+    margin-top: 52px;
+    color:white;
+    box-shadow: 0 0.1em 0 0 #979797;
+    border-bottom-color: #86ba5e;
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+  }
+  .diamond {
+      color:white;
+    width: 0;
+    height: 0;
+    border: 75px solid transparent;
+    border-bottom-color: #815fd6;
+    position: relative;
+    top: -71px;
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+  }
+  .diamond:after {
+    content: '';
+    position: absolute;
+    left: -75px;
+    top: 75px;
+    width: 0;
+    height: 0;
+    border: 75px solid transparent;
+    border-top-color: #815fd6;
+  
+  }
+  .mainDiv{
+      display: flex;
+      justify-content: space-between;
+  }
+  .oval{
+    box-shadow: 0 0.1em 0 0.05em #dddddd;
+    border-bottom-color: #555;
+    color: white;
+    width: 150px;
+    height: 75px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 200px;
+    /* border-radius: 51%; */
+    background-color: #4ab1da;
+    margin-top: auto;
+    
+  }

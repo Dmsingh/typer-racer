@@ -1,0 +1,49 @@
+.h1 {
+    font-size: 72px;
+    position: relative;
+    
+    top:0%;
+    background: -webkit-linear-gradient(#fb0606, #c204b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }  
+  .input-text{
+    position: relative;
+    left:0%;
+    top:50%;
+    height:50px;width:700px; border:2px solid black;border-radius:6px;font-size:24px;padding-left:20px
+  }  
+  .input-btn{
+       cursor: pointer;
+      background-color:orange;
+      margin-top:40px;
+      padding: 5px 20px;
+      font-size:24px;
+      border-radius:2px;
+      border:3px solid white;
+      position: relative;
+      top:50%;
+      color:black;
+      font-weight: 600;
+     
+  }
+  .input-btn:hover{
+     z-index: 1;
+     font-size:28px;
+  }
+.h2{
+    font-size: 36px;
+    position: relative;
+    /* left:3%; */
+    top:15%;
+  
+    color:white
+  }
+  .h2l{
+    font-size: 36px;
+    position: relative;
+    /* left:3%; */
+    top:8%;
+  
+    color:white
+  }

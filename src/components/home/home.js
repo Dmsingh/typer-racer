@@ -9,11 +9,11 @@ function Home() {
      const list=async()=>{
          await axios.get(`https://wrod-race-playerdata-api.vercel.app/gettopten`)
               .then(response => {
-                  console.log(response.data)
+        
                   settop(response.data)
               })
               .catch(err => {
-                  console.log(err)
+           
               })
      }
      return list()

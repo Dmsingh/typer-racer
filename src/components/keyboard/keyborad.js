@@ -124,11 +124,11 @@ window.speechSynthesis.speak(msg);
 
       axios.post('https://wrod-race-playerdata-api.vercel.app/pushdata',body)
       .then((response) =>{
-        console.log(response);
+
         
       })
       .catch((error) =>{
-        console.log(error)
+
       })
      
  

@@ -9,7 +9,7 @@ function Home() {
      const list=async()=>{
          await axios.get(`https://wrod-race-playerdata-api.vercel.app/gettopten`)
               .then(response => {
-        
+
                   settop(response.data)
               })
               .catch(err => {
@@ -40,18 +40,29 @@ function Home() {
                <div style={{width:'30%',height:'100vh',backgroundImage: `linear-gradient(to top, #c71d6f 0%, #d09693 100%)`,opacity:0.9,position:'relative',}}>
                
                <h2 className="h2l">Leader Board</h2>
- 
+               {/* number of games */}
+{/* played, average score, max level reached, */}
 
 
 
 <div style={{marginTop:'15%',marginLeft:'2%',mariginRight:'6%'}}> 
+<div  style={{display: 'flex',justifyContent: 'space-between',marginTop:-4}}>
+        <h3 style={{marginLeft:4}}> Racer Name</h3>
+        <h3 style={{marginLeft:4}}> Number of Games </h3>
+        <h3 style={{marginLeft:4}}> Average Score</h3>
+        
+        <h3 style={{marginLeft:4}}>Max Level</h3>
+        </div>
 {
-
+       
      top && top.map((racer,i)=>(
           
-        <div style={{display: 'flex',justifyContent: 'space-between',marginTop:-4}}>
-        <h2 style={{marginLeft:4}}> {racer.username}</h2>
-        <h3 style={{position:'relative',left:-16}}>{racer.max_score}</h3>
+        <div key={i} style={{display: 'flex',justifyContent: 'space-between',marginTop:-4}}>
+        <h3 style={{marginLeft:4,width:110}}> {racer.username}</h3>
+        <h3 > {racer.no_of_games_played}</h3>
+        <h3 > {Math.round(racer.score_sum/racer.no_of_games_played)}</h3>
+        
+        <h3 style={{position:'relative',left:-16}}>{racer.max_level_reached}</h3>
         </div>
      ))
      
